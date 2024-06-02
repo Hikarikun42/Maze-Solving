@@ -20,7 +20,7 @@ def solve_maze():
     
     facing = "S"
     
-    while maze.is_maze_solved() == False:
+    while get_entity_type() != Entity.Treasure:
         
         left_wall = get_left_wall(facing)
         front_wall = get_front_wall(facing)
